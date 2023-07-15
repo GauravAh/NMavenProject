@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 	features = "src/test/java/FeaturePackage/",
 	glue = {"StepDefinitionPackage","Hooks"},
 	tags = "@sanity",
-		/* dryRun = true, */
+	/* dryRun = true, */
 	monochrome = true,
 	publish = true,
 	plugin = {"pretty","html:target/cucumber-report/creport.html"}

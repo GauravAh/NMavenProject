@@ -15,7 +15,7 @@ public class HooksClass {
 		BrowserClass.setBrowser("chrome");
 		driver = BrowserClass.getBrowser();
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-	    driver.manage().window().maximize();
+		driver.manage().window().maximize();
 	}
 	
 }

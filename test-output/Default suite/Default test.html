@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Test</title>
+<title>TestNG:  Default test</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Test</h2><table border='1' align="center">
+<h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jul 15 16:15:10 IST 2023</td>
+<td>Started on:</td><td>Sat Jul 15 12:29:35 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>30 seconds (30832 ms)</td>
+<tr><td>Total time:</td><td>43 seconds (43127 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,10 +77,15 @@ function toggleAllBoxes() {
 <tr>
 <td title='RunnerPackage.HRMRunner.runScenario()'><b>runScenario</b><br>Test class: RunnerPackage.HRMRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Title", "Orange Login functionality"</td>
 <td><div><pre>java.lang.AssertionError: expected [https://www.google.com/] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
 	at StepDefinitionPackage.HrmStepDefinition.we_are_on_home_page(HrmStepDefinition.java:26)
 	at ?.We are on home page(file:///C:/Users/gaurav/eclipse-workspace/NCucumberProjectAr/src/test/java/FeaturePackage/Hrm.feature:5)
-... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace45703335", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace45703335'><pre>java.lang.AssertionError: expected [https://www.google.com/] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]
+</pre></div><a href='#' onClick='toggleBox("stack-trace855277727", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace855277727'><pre>java.lang.AssertionError: expected [https://www.google.com/] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
@@ -89,8 +94,8 @@ function toggleAllBoxes() {
 	at StepDefinitionPackage.HrmStepDefinition.we_are_on_home_page(HrmStepDefinition.java:26)
 	at ?.We are on home page(file:///C:/Users/gaurav/eclipse-workspace/NCucumberProjectAr/src/test/java/FeaturePackage/Hrm.feature:5)
 </pre></div></td>
-<td>25</td>
-<td>RunnerPackage.HRMRunner@60dcc9fe</td></tr>
+<td>36</td>
+<td>RunnerPackage.HRMRunner@73ee04c8</td></tr>
 </table><p>
 </body>
 </html>

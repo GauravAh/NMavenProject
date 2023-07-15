@@ -1,4 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 56.75 s -- in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 32.27 s <<< FAILURE! -- in TestSuite
+RunnerPackage.HRMRunner.runScenario["Verify the Title", "Orange Login functionality"](1) -- Time elapsed: 25.72 s <<< FAILURE!
+java.lang.AssertionError: expected [https://www.google.com/] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at StepDefinitionPackage.HrmStepDefinition.we_are_on_home_page(HrmStepDefinition.java:26)
+	at ✽.We are on home page(file:///C:/Users/gaurav/eclipse-workspace/NCucumberProjectAr/src/test/java/FeaturePackage/Hrm.feature:5)
+

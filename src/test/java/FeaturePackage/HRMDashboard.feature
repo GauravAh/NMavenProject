@@ -1,6 +1,6 @@
 Feature: HRM dashboard functionality
 
-@sanity
+@smoke
 Scenario: Add employee information using valid details
 Given We are on home page
 When Enter valid username as "Admin"

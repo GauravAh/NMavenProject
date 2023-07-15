@@ -1,5 +1,6 @@
 Feature: Orange Login functionality
 
+@sanity
 Scenario: Verify the Title
 Given We are on home page
 When I get the title of page

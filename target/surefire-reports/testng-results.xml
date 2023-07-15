@@ -1,43 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-14T19:42:22 IST" name="Suite" finished-at="2023-07-14T19:43:17 IST" duration-ms="55003">
+  <suite started-at="2023-07-15T16:15:10 IST" name="Suite" finished-at="2023-07-15T16:15:41 IST" duration-ms="30832">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerPackage.HRMRunner@60dcc9fe]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-07-14T19:42:22 IST" name="Test" finished-at="2023-07-14T19:43:17 IST" duration-ms="55003">
+    <test started-at="2023-07-15T16:15:10 IST" name="Test" finished-at="2023-07-15T16:15:41 IST" duration-ms="30832">
       <class name="RunnerPackage.HRMRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:RunnerPackage.HRMRunner@60dcc9fe]" started-at="2023-07-14T19:42:22 IST" name="setUpClass" finished-at="2023-07-14T19:42:25 IST" duration-ms="2950" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:RunnerPackage.HRMRunner@60dcc9fe]" started-at="2023-07-15T16:15:10 IST" name="setUpClass" finished-at="2023-07-15T16:15:13 IST" duration-ms="2159" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@138aa3cc]]>
+                <![CDATA[org.testng.TestRunner@3fb9a67f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerPackage.HRMRunner@60dcc9fe]" started-at="2023-07-14T19:42:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-14T19:43:13 IST" duration-ms="47782" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerPackage.HRMRunner@60dcc9fe]" started-at="2023-07-15T16:15:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-15T16:15:38 IST" duration-ms="25470" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Add employee information using valid details"]]>
+                <![CDATA["Verify the Title"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["HRM dashboard functionality"]]>
+                <![CDATA["Orange Login functionality"]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://www.google.com/] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://www.google.com/] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at StepDefinitionPackage.HrmStepDefinition.we_are_on_home_page(HrmStepDefinition.java:26)
+at ✽.We are on home page(file:///C:/Users/gaurav/eclipse-workspace/NCucumberProjectAr/src/test/java/FeaturePackage/Hrm.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:RunnerPackage.HRMRunner@60dcc9fe]" started-at="2023-07-14T19:43:13 IST" name="tearDownClass" finished-at="2023-07-14T19:43:17 IST" duration-ms="4120" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:RunnerPackage.HRMRunner@60dcc9fe]" started-at="2023-07-15T16:15:38 IST" name="tearDownClass" finished-at="2023-07-15T16:15:41 IST" duration-ms="3055" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
